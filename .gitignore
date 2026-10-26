@@ -1,5 +1,7 @@
 dataset.zip
 __pycache__
 .venv
-./uncategorized/*
-uncategorized
+
+# Drop-off folder for new image/label pairs: keep the folder, ignore its contents.
+/uncategorized/*
+!/uncategorized/.gitkeep
