@@ -27,7 +27,7 @@ if model.task != "pose" or model.model.yaml.get("kpt_shape") != [4, 3]:
     # e.g. the stock COCO yolo11s-pose.pt (17 keypoints, class 'person') rather than our trained weights
     raise RuntimeError(f"{MODEL_PATH} is not a breadboard pin model (classes: {list(model.names.values())})")
 
-app = FastAPI(title="CircuitMan detector")
+app = FastAPI(title="CircuitMax detector")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=os.environ.get("CORS_ORIGINS", "*").split(","),
